@@ -26,3 +26,19 @@ With various simulations, automatic and manual, we obtain about 13,700 data. 60%
 
 
 ![image info](./pictures/data_train.png)
+
+
+We create a neural network. With colab we can play with models and go testing.
+
+```ruby
+
+model_1 = tf.keras.Sequential()
+model_1.add(tf.keras.layers.Dense(50,activation='relu', input_shape=(2,)))
+model_1.add(tf.keras.layers.Dense(50,activation='relu'))
+model_1.add(tf.keras.layers.Dense(2, activation='linear' ))
+model_1.compile(optimizer='rmsprop', loss='mse', metrics=['mae'])
+model_1.summary()
+
+```
+
+
