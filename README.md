@@ -1,4 +1,4 @@
-# Neural-inverse-kinematics-training-of-a-robotic-arm-
+# Inverse kinematics training with neural networks for a robotic arm
 Through computer simulations we train a neural network to have the inverse kinematics of an arm manufactured from scratch
 
 ## Descripton ##
