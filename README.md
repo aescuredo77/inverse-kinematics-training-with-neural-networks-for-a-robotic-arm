@@ -16,7 +16,13 @@ In this case, we use data obtained from a mechanism simulator to train a neural 
 
 ## How does it work ##
 
+Using linkage, I made a model of the robotic arm in 2D, representing only the second and third axes. Obtaining graphically the x, y of the point that represents the center of the gripper and the x, y of each link. We obtain the angle of each joint and with it we train the neural network.
+
+![image info](./pictures/arm_simulation.png)
+
+
+With various simulations, automatic and manual, we obtain about 13,700 data. 60% to train, 20% to validate and 20% to test.
 
 
 
-
+![image info](./pictures/data_train.png)
