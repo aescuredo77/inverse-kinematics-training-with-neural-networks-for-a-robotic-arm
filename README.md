@@ -41,4 +41,30 @@ model_1.summary()
 
 ```
 
+![image info](./pictures/trai_val.png)
 
+```ruby
+
+import tensorflow as tf
+import math
+def demo_arm(cordenates):
+    """
+         x is the horizontal distance from the center of the fiducial to the center of the image
+         y is the distance between the fiducial and the camera
+         z is the vertical distance from the center of the fiducial to the center of the image
+    """
+    conv = 7400/(2*math.pi)
+    new_model = tf.keras.models.load_model('arm_new205.h5')
+    angle_base = math.asin(x/y)
+    pulse_conv= int(angle_base * conv)
+    base_pulses = arm_msg.base_current + pulse_conv
+    resultado = new_model.predict([(y , z)])
+    left_pulses = int(resultado[0][0] * conv) 
+    right_pulses = int(resultado[0][1] *conv)
+    move_arm(base_pulses, left_pulses, right_pulses)
+    
+    
+    
+
+
+```
