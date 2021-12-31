@@ -2,7 +2,7 @@
 Through computer simulations we train a neural network to have the inverse kinematics of an arm manufactured from scratch
 
 ## Descripton ##
-Currently there are a snfin of tools at our fingertips, which make life easier for us. And if we use them in our projects, they help us to advance a little more.
+We currently have a good number of tools that make life easier for us. And if we use them in our projects, they help us to advance a little more.
 In this case, we use data obtained from a mechanism simulator to train a neural network through the use of colab, to obtain the inverse kinematic of a robotic arm.
 
 
