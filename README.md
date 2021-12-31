@@ -62,10 +62,13 @@ def demo_arm(cordenates):
     left_pulses = int(resultado[0][0] * conv) 
     right_pulses = int(resultado[0][1] *conv)
     move_arm(base_pulses, left_pulses, right_pulses)
-    
-    
-    
-
-
+ 
 ```
+The detection with aruco and and to the camera was already treated in another [entry](https://github.com/aescuredo77/Wifi_camera_M5_Ros). It is a work in progress, perhaps for later it is to obtain the three coordinates with the input or even obtain said coordinates with the input of the fiducial. It is an amazing field and we have some good tools to start playing.
+
 [![Watch the video](./pictures/arm_video.png)](https://youtu.be/yPhlfRrhBiU )
+
+
+## Happy new year 2022 ##
+
+
