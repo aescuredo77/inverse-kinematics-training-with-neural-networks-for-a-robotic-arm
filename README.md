@@ -68,3 +68,4 @@ def demo_arm(cordenates):
 
 
 ```
+[![Watch the video](./pictures/arm_video.png)](https://youtu.be/yPhlfRrhBiU )
